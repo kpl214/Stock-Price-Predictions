@@ -6,7 +6,7 @@ import requests
 load_dotenv()
 api_key = os.getenv("ALPHA_VANTAGE_API_KEY")
 
-def fetch_stock_data(symbol, function="TIME_SERIES_DAILY"):
+def fetch_stock_data(symbol, function="TIME_SERIES_DAILY", outputsize="full"):
     
     # Fetch stock data from Alpha Vantage and save it as a CSV file.
 
@@ -17,8 +17,7 @@ def fetch_stock_data(symbol, function="TIME_SERIES_DAILY"):
     # Returns:
     #     str: The file name of the saved CSV.
     
-    url = f"https://www.alphavantage.co/query?function={function}&symbol={symbol}&apikey={api_key}&datatype=csv"
-
+    url = f"https://www.alphavantage.co/query?function={function}&symbol={symbol}&apikey={api_key}&datatype=csv&outputsize={outputsize}"
     response = requests.get(url)
     if response.status_code == 200:
         file_name = f"{symbol}_stock_data.csv"
@@ -27,7 +26,7 @@ def fetch_stock_data(symbol, function="TIME_SERIES_DAILY"):
         print("Data fetched successfully.")
         return file_name
     else:
-        print("Data fetch unsuccessfully.")
+        raise ValueError(f"Failed to fetch data for {symbol}: {response.status_code}")
 
 # data = pd.read_csv("stock_data.csv")
 # data["timestamp"] = pd.to_datetime(data["timestamp"])
