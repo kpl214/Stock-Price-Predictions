@@ -1,6 +1,4 @@
-Here’s a simplified version of the README:
-
-Stock-Price-Predictions
+# Stock-Price-Predictions
 
 This project predicts stock prices using machine learning models, including LSTMs, XGBoost, and Linear Regression. It fetches stock data from the Alpha Vantage API, preprocesses it, trains models, and will eventually visualize predictions using a Streamlit dashboard.
 
