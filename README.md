@@ -50,5 +50,3 @@ Future Work
 	•	Store predictions in a cloud database (e.g., MySQL/Amazon RDS).
 	•	Tune models for better performance.
 	•	Add more models and external datasets.
-
-Feel free to adapt or improve this README for your project!
