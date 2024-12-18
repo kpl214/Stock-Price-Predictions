@@ -6,8 +6,9 @@ Features
 
 	•	Fetches stock data automatically from the Alpha Vantage API.
 	•	Implements multiple models for stock price prediction:
-	•	LSTM for time-series forecasting.
-	•	XGBoost for tree-based regression.
+	•	LSTM for identifying non-linear patterns in time-series forecasting.
+	•       ARIMA for identifying linear patterns in time-series forecasting.
+	•	XGBoost for tree-based regression AKA for parameter based decision making.
 	•	Linear Regression as a baseline model.
 	•	Visualizes predictions and feature importance with a Streamlit app.
 
