@@ -47,7 +47,7 @@ streamlit run dashboard.py
 
 Future Work
 
-    • Store predictions in a cloud    database (e.g., PostgreSQL/Amazon RDS).
+    • Store predictions in a cloud database (e.g., PostgreSQL/Amazon RDS).
     • Implementing a streamlit dashboard for further analysis.
     • Tune models for better performance.
     • Add more models and external datasets.
