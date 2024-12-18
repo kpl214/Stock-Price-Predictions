@@ -1,6 +1,6 @@
 # Stock-Price-Predictions
 
-This project predicts stock prices using machine learning models, including LSTMs, XGBoost, and Linear Regression. It fetches stock data from the Alpha Vantage API, preprocesses it, trains models, and will eventually visualize predictions using a Streamlit dashboard.
+This project predicts stock prices using machine learning models, including LSTM, XGBoost, ARIMA, and Linear Regression. It fetches stock data from the Alpha Vantage API, preprocesses it, trains models, and will visualize predictions and classification using SHAP, Matplotlib, and eventually, a Streamlit dashboard.
 
 Features
 
@@ -47,6 +47,7 @@ streamlit run dashboard.py
 
 Future Work
 
-	•	Store predictions in a cloud database (e.g., MySQL/Amazon RDS).
+	•	Store predictions in a cloud database (e.g., PostgreSQL/Amazon RDS).
+        •       Implementing a streamlit dashboard for further analysis.
 	•	Tune models for better performance.
 	•	Add more models and external datasets.
