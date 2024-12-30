@@ -1,9 +1,9 @@
-CREATE DATABASE IF NOT EXISTS stock_predictions;
-USE stock_predictions;
-
-CREATE TABLE IF NOT EXISTS weekly_predictions (
-    id INT AUTO_INCREMENT PRIMARY KEY,
-    symbol VARCHAR(10),
-    prediction_date DATE,
-    predicted_value FLOAT
+CREATE TABLE weekly_predictions (
+    id SERIAL PRIMARY KEY,
+    symbol VARCHAR(10) NOT NULL,
+    prediction_date DATE NOT NULL,
+    predicted_value FLOAT NOT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
+
+CREATE INDEX idx_symbol ON weekly_predictions (symbol);
