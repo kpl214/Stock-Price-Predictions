@@ -27,15 +27,3 @@ def fetch_stock_data(symbol, function="TIME_SERIES_DAILY", outputsize="full"):
         return file_name
     else:
         raise ValueError(f"Failed to fetch data for {symbol}: {response.status_code}")
-
-# data = pd.read_csv("stock_data.csv")
-# data["timestamp"] = pd.to_datetime(data["timestamp"])
-# data = data.sort_values("timestamp")
-
-# plt.figure(figsize=(10,5))
-# plt.plot(data["timestamp"], data["close"], label="Close Price")
-# plt.xlabel("Date")
-# plt.ylabel("Price")
-# plt.title(f"{symbol} Stock Price")
-# plt.legend()
-# plt.show()
