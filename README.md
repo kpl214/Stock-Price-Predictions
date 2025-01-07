@@ -2,9 +2,6 @@
 
 This project predicts stock prices using machine learning models, including LSTM, XGBoost, ARIMA, and Linear Regression. It fetches stock data from the Alpha Vantage API, preprocesses it, trains models, and will visualize predictions and classification using SHAP, Matplotlib, and eventually, a Streamlit dashboard.
 
-![Model Prediction vs  Data](https://github.com/user-attachments/assets/0cfaa7ce-141c-47e8-93a5-f63223f6fab4)
-![XGBoost SHAP Graph](https://github.com/user-attachments/assets/400f936c-9da4-4909-86a5-4a4330e5a495)
-
 Features
 
 	•	Fetches stock data automatically from the Alpha Vantage API.
@@ -14,7 +11,9 @@ Features
 	•	XGBoost for tree-based regression AKA for parameter based decision making.
 	•	Linear Regression as a baseline model.
 	•	Visualizes predictions and feature importance with Matplotlib/SHAP.
-
+ 
+![Model Prediction vs  Data](https://github.com/user-attachments/assets/0cfaa7ce-141c-47e8-93a5-f63223f6fab4)
+![XGBoost SHAP Graph](https://github.com/user-attachments/assets/400f936c-9da4-4909-86a5-4a4330e5a495)
 Setup
 
 1. Clone the Repository
