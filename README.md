@@ -10,7 +10,7 @@ Features
 	•       ARIMA for identifying linear patterns in time-series forecasting.
 	•	XGBoost for tree-based regression AKA for parameter based decision making.
 	•	Linear Regression as a baseline model.
-	•	Visualizes predictions and feature importance with a Streamlit app.
+	•	Visualizes predictions and feature importance with Matplotlib/SHAP.
 
 Setup
 
@@ -41,14 +41,10 @@ To train models and make predictions:
 
 python main.py
 
-To visualize results with Streamlit:
 
-streamlit run dashboard.py
+Ongoing Work
 
-
-Future Work
-
-    • Store predictions in a cloud database (e.g., PostgreSQL/Amazon RDS).
+    • Data aggregation using AWS Tools for cloud utilization.
     • Implementing a streamlit dashboard for further analysis.
     • Tune models for better performance.
-    • Add more models and external datasets.
+    • Updating code, fixing bugs, improving accuracy.
