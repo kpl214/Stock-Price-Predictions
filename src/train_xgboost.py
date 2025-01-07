@@ -23,7 +23,6 @@ def train_xgboost(X_train, y_train, X_test, y_test, n_estimators=100, max_depth=
 
     # Compute MSE
     mse = mean_squared_error(y_test, predictions)
-    print(f"XGBoost Model MSE: {mse}")
 
     return {
         "model": model,
